@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CMU';
+    src: url('fonts/cmunrm-webfont.woff');
+}
+
+body {
+    text-align: center;
+    font-family: 'CMU';
+}

@@ -28,16 +28,18 @@ body {
     color: rgb(160, 161, 190);
 }
 
-.navbar > a {
+.navbar > div {
     padding: 0.1em 5px;
     user-select: none;
 }
 
-.navbar > a:hover {
-    background-color: blue;
+@media(hover: hover) and (pointer: fine){
+    .navbar > div:hover {
+        background-color: blue;
+    }
 }
 
-.navbar > a:active {
+.navbar > div:active {
     background-color: rgb(199, 199, 199);
 }
 

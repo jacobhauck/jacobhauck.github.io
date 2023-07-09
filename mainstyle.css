@@ -16,7 +16,10 @@ body {
 
 .header {
     margin: 1em 0;
+    padding: 0 0 0 10px;
     font-size: larger;
+    text-align: left;
+    user-select: none;
 }
 
 .navbar {
@@ -25,16 +28,16 @@ body {
     color: rgb(160, 161, 190);
 }
 
-.navbar > div {
+.navbar > a {
     padding: 0.1em 5px;
     user-select: none;
 }
 
-.navbar > div:hover {
+.navbar > a:hover {
     background-color: blue;
 }
 
-.navbar > div:active {
+.navbar > a:active {
     background-color: rgb(199, 199, 199);
 }
 

@@ -6,4 +6,44 @@
 body {
     text-align: center;
     font-family: 'CMU';
+    margin: 0;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin: 1em 0;
+    font-size: larger;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(1, 95, 218);
+    color: rgb(160, 161, 190);
+}
+
+.navbar > div {
+    padding: 0.1em 5px;
+    user-select: none;
+}
+
+.navbar > div:hover {
+    background-color: blue;
+}
+
+.navbar > div:active {
+    background-color: rgb(199, 199, 199);
+}
+
+.content {
+    margin: 0.25em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    font-size: smaller;
 }

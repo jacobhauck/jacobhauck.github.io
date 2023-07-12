@@ -3,7 +3,6 @@
 const nextConfig = {
     output: "export",
     basePath: "/jacobhauck.github.io",
-    assetPrefix: "/jacobhauck.github.io",
     images: {
         unoptimized: true,
     }

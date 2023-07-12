@@ -10,8 +10,8 @@ if(process.env.GITHUB_ACTIONS || false) {
 }
 
 const nextConfig = {
-    assetPrefix,
-    basePath
+    assetPrefix: assetPrefix,
+    basePath: basePath
 };
 
 module.exports = nextConfig

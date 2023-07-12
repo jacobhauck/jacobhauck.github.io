@@ -10,8 +10,8 @@ if(process.env.GITHUB_ACTIONS) {
 }
 
 const nextConfig = {
-    assetPrefix: `/${repo}/`,
-    basePath: `/${repo}/`
+    assetPrefix,
+    basePath
 }
 
 module.exports = nextConfig

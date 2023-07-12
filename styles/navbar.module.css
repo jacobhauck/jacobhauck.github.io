@@ -1,0 +1,22 @@
+
+.navbar {
+    background-color: var(--primary);
+    color: var(--very-dark);
+    display: flex;
+}
+
+.navbutton {
+    background-color: var(--primary);
+    color: var(--very-dark);
+    text-decoration: none;
+    user-select: none;
+    padding: 0 0.5rem;
+}
+
+.navbutton:hover {
+    filter: brightness(80%);
+}
+
+.navbutton:active {
+    filter: brightness(70%);
+}

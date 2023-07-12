@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'CMU';
+    src: url('../fonts/cmunrm-webfont.woff');
+}
+
+:root {
+    --primary: #5ab1bbff;
+    --secondary: #685f74ff;
+    --dark: #685044ff;
+    --very-dark: #001a23ff;
+    --snow: #fbf5f3ff;
+}
+
+body {
+    font-family: 'CMU';
+    color: var(--very-dark);
+    margin: 0;
+}

@@ -1,0 +1,4 @@
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,11 @@
+
+.headingContainer {
+    padding: 0.5rem 1rem;
+}
+
+.heading {
+    user-select: none;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--very-dark);
+}

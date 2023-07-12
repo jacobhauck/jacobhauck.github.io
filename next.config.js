@@ -4,9 +4,9 @@ let assetPrefix = '';
 let basePath = '';
 
 if(process.env.GITHUB_ACTIONS || false) { 
-    const repo = 'jacobhauck';
+    const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
     assetPrefix = `/${repo}/`;
-    basePath = `/${repo}/`;
+    basePath = `/${repo}`;
 }
 
 const nextConfig = {

@@ -1,6 +1,6 @@
-import { parseISO, format } from "date-fns";
+import { endOfDay, format } from "date-fns";
 
-export default function Date({ dateString }) {
-    const date = parseISO(dateString);
-    return <time dateTime={dateString}>{format(date, 'dd LLLL yyyy')}</time>
+export default function CurrentDate({ dateString }) {
+    const date = new Date();
+    return <time dateTime={dateString}>{format(date, "dd LLLL yyyy 'at' H:mm 'CST'")}</time>
 }

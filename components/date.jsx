@@ -1,4 +1,4 @@
-import { endOfDay, format } from "date-fns";
+import { format } from "date-fns";
 
 export default function CurrentDate({ dateString }) {
     const date = new Date();

@@ -6,3 +6,12 @@
 .centeredText {
     text-align: center;
 }
+
+.noteText {
+    font-size: 0.7em;
+    color: var(--dark);
+}
+
+.blockDisplay {
+    display: block;
+}

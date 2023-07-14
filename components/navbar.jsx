@@ -13,6 +13,9 @@ export default function Navbar() {
             <Link className={style.navbutton} href='https://runescape.com'>
                 Solved Problems
             </Link>
+            <Link className={style.navbutton} href='/miscellany'>
+                Miscellany
+            </Link>
         </div>
     );
 }

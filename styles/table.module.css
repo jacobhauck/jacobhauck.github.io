@@ -1,0 +1,21 @@
+.head {
+    border-spacing: 0;
+}
+
+.head th {
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+.head td {
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+.midruleBelow td {
+    border-bottom: 1px solid black;
+}
+
+.lastRow td {
+    border-bottom: 2px solid black;
+}

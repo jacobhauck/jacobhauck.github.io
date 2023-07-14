@@ -1,0 +1,30 @@
+.topics {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 7rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    background-color: var(--secondary);
+    color: var(--snow);
+    text-align: center;
+    padding: 0.5em 0.5em;
+}
+
+.topic {
+    text-decoration: none;
+    font-size: .9rem;
+    background-color: var(--secondary);
+    color: var(--snow);
+    padding: 0.2em 0.5em;
+}
+
+.topic:hover {
+    filter: brightness(80%);
+}
+
+.topic:active {
+    filter: brightness(70%);
+}

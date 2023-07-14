@@ -4,3 +4,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.mainBody p {
+    margin: 0;
+    padding-bottom: 0.5em;
+}

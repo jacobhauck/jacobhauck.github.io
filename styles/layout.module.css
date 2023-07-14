@@ -1,0 +1,16 @@
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.sublayoutFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.contentFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+}

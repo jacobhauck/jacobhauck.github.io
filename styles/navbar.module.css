@@ -3,6 +3,7 @@
     background-color: var(--primary);
     color: var(--very-dark);
     display: flex;
+    width: 100vw;
 }
 
 .navbutton {

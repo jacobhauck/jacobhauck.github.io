@@ -9,7 +9,7 @@ export default function Home() {
                 <title>Jacob's Website</title>
             </Head>
             <Layout>
-                <p>Welcome to my website!</p>
+                <h1>Welcome to my website!</h1>
                 <p>I'm not sure why you're here already, seeing as there is almost no content posted yet. Enjoy anyway, I guess!</p>
             </Layout>
         </>

@@ -13,7 +13,7 @@
     padding: 0.5em 0.5em;
 }
 
-.topic {
+.topic, .current {
     text-decoration: none;
     font-size: .9rem;
     background-color: var(--secondary);
@@ -22,9 +22,13 @@
 }
 
 .topic:hover {
-    filter: brightness(80%);
+    filter: brightness(120%);
 }
 
 .topic:active {
-    filter: brightness(70%);
+    filter: brightness(130%);
+}
+
+.current {
+    filter: brightness(120%);
 }

@@ -1,20 +1,15 @@
 import Layout from "@/components/layout";
 import Head from "next/head";
-import { getTopicData } from "@/lib/content";
+import getTopicProps from "@/lib/content";
 
 export async function getStaticProps(){
-    const topicData = getTopicData(["miscellany"]);
-    return {
-        props: {
-            topicData
-        }
-    }
+    return getTopicProps('miscellany');
 }
 
-export default function MiscellanyHome({ topicData }) {
+export default function MiscellanyHome({ topics }) {
     return (<>
         <Head><title>Miscellany</title></Head>
-        <Layout category={"miscellany"} topics={topicData}>
+        <Layout category={"miscellany"} topics={topics}>
             <p>
                 Here are a bunch of random things.
             </p>

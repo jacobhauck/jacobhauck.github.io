@@ -1,24 +1,20 @@
 import Link from "next/link"
 import Head from "next/head";
 import Layout from "@/components/layout";
-import { getTopicData } from "@/lib/content";
+import getTopicProps from "@/lib/content";
 import tableStyle from "@/styles/table.module.css";
 import utilStyle from "@/styles/utils.module.css";
 
 
 export async function getStaticProps(){
-    const topicData = getTopicData(["miscellany"]);
-    return {
-        props: {
-            topicData
-        }
-    }
+    return getTopicProps('miscellany');
 }
 
-export default function Post({ topicData }) {
+export default function Post({ topics }) {
     return (<>
     <Head><title>Custom PC</title></Head>
-    <Layout category={"miscellany"} topics={topicData}>
+    <Layout category={"miscellany"} topic={"custom-pc"} topics={topics}>
+    <h1>My Custom PC</h1>
     <p>
         Right now I don't have much to share other than this, {}
         <Link href="https://pcpartpicker.com/list/Lc9Y6r">my new PC build</Link>.
@@ -106,14 +102,14 @@ export default function Post({ topicData }) {
             <td class="pcpp-part-list-type">Case Fan</td>
             <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/NWWfrH/in-win-sirius-loop-asl120-50-cfm-120-mm-fans-3-pack-asl120fan-3pk">In Win Sirius Loop ASL 50 CFM 120 mm Fans 3-Pack</a></td>
             <td class="pcpp-part-list-price">
-                Purchased For $31.28
+                $31.28
             </td>
         </tr>
         <tr>
             <td class="pcpp-part-list-type">Case Fan</td>
             <td class="pcpp-part-list-item"><a href="https://pcpartpicker.com/product/NWWfrH/in-win-sirius-loop-asl120-50-cfm-120-mm-fans-3-pack-asl120fan-3pk">In Win Sirius Loop ASL 50 CFM 120 mm Fans 3-Pack</a></td>
             <td class="pcpp-part-list-price">
-                Purchased For $31.28
+                $31.28
             </td>
         </tr>
         <tr className={tableStyle.midruleBelow}>

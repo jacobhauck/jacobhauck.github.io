@@ -7,7 +7,7 @@ export default function About() {
     return (
         <>
             <Head><title>About Jacob</title></Head>
-            <Layout>
+            <Layout category={'about'}>
             <Article>
                 This is where you will find information about me.
             </Article>

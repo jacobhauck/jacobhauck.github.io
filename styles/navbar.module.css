@@ -6,7 +6,7 @@
     width: 100vw;
 }
 
-.navbutton {
+.navbutton, .current {
     background-color: var(--primary);
     color: var(--very-dark);
     text-decoration: none;
@@ -19,5 +19,9 @@
 }
 
 .navbutton:active {
+    filter: brightness(70%);
+}
+
+.current {
     filter: brightness(70%);
 }

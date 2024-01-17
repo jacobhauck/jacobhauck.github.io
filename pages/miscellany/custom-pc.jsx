@@ -10,10 +10,10 @@ export async function getStaticProps(){
     return getTopicProps('miscellany');
 }
 
-export default function Post({ topics }) {
+export default function Post({ topics, subtopics }) {
     return (<>
     <Head><title>Custom PC</title></Head>
-    <Layout category={"miscellany"} topic={"custom-pc"} topics={topics}>
+    <Layout category={"miscellany"} topic={"custom-pc"} topics={topics} subtopics={subtopics}>
     <h1>My Custom PC</h1>
     <p>
         Right now I don't have much to share other than this, {}

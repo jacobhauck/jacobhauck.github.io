@@ -11,8 +11,8 @@ export default function Topics({ category, topic, topics, subtopic, subtopics })
                 <Link key={data.id} className={data.id == topic ? style.current : style.topic} href={`/${category}/${data.id}`}>
                     {data.title}
                 </Link>
-                {data.id == topic && subtopic ? 
-                    (<Subtopics subtopic={subtopic} subtopics={subtopics} />) :
+                {data.id == topic ? 
+                    (<Subtopics key={"subtopics-main"} category={category} topic={topic} subtopic={subtopic} subtopics={subtopics} />) :
                     (<></>)
                 }
                 </>

@@ -1,11 +1,15 @@
-.topics, .topics-indent {
+.topics, .topics_indent {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
     width: 7rem;
 }
 
-.topics-indent {
+.topics {
+    margin-right: 2em;
+}
+
+.topics_indent {
     margin-left: 2em;
 }
 

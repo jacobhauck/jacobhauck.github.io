@@ -6,13 +6,13 @@ import Article from "./article";
 import Topics from "./topics";
 
 
-export default function Layout( { children, category, topic, topics } ) {
+export default function Layout( { children, category, topic, topics, subtopic, subtopics } ) {
     return (<>
         <section className={style.verticalFlex}>
             <TopMatter />
             <Navbar category={category}/>
             <section className={style.sublayoutFlex}>
-                {topics ? <Topics category={category} topic={topic} topics={topics}></Topics> : (<></>)}
+                {topics ? <Topics category={category} topic={topic} topics={topics} subtopic={subtopic} subtopics={subtopics}></Topics> : (<></>)}
                 
                 <section className={style.contentFlex}>
                     <Article>
